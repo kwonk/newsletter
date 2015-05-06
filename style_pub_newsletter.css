@@ -1,0 +1,103 @@
+/* ------------------------------------------------
+	Style widget newsletter
+------------------------------------------------ */
+.newsletter-widget {
+}
+
+.newsletter-widget select {
+	background: white;
+	border : 1px inset silver; 
+	width : 140px;
+	margin-left : 5px;
+	display : block;
+}
+
+.newsletter-widget p {
+    border-bottom: 1px silver;
+    padding: 1px 0 1px 1px;
+    display : block;
+    margin: 0 0 5px;
+}
+
+.newsletter-widget img {
+	margin-right : 5px;
+	padding : 1px 1px;	
+}
+
+#newsletter-widget-presentation {
+	border-bottom: 1px dashed silver;
+}
+
+.newsletter-widget #nl_email {
+	width : 90%;
+	display : block;
+}
+
+/* ------------------------------------------------
+	Style formulaire page publique newsletter
+------------------------------------------------ */
+
+.newsletter_form {
+}
+
+.newsletter_form select {
+	background: white;
+	border : 1px inset silver; 
+	width : 140px;
+	margin-left : 5px;
+	display : block;
+}
+
+.newsletter_form p {
+    border-bottom: 1px silver;
+    padding: 1px 0 1px 1px;
+    display : block;
+    margin: 0 0 5px;
+}
+
+.newsletter_form img {
+	margin-right : 5px;
+	padding : 1px 1px;	
+}
+
+#newsletter_form-presentation {
+	border-bottom: 1px dashed silver;
+}
+
+.newsletter_form #nl_email {
+	width : 255px;
+	display : block;	
+}
+
+/** ------------------------------------------------
+	Style commun newsletter
+------------------------------------------------ */
+#nl_form p label {
+	vertical-align: bottom;
+}
+
+#newsletter-pub-message {
+	color : #000;
+}
+
+#nl_captcha {
+	display : block;
+}
+
+#nl_form input[type=submit]  {
+}
+
+#nl_form input[type=submit]:hover {
+}
+
+#nl_form p input {
+}
+
+#nl_option select {
+}
+
+#nl_submit {
+}
+
+#nl_submit:hover {
+}

@@ -1,0 +1,13 @@
+{$header} {$blogName}
+{nl}{nl}
+{$txtEnabled}
+{nl}{nl}
+{$txt_intro_suspend}
+{$txtSuspend}
+{$urlSuspend}
+{nl}{nl}
+{$txt_intro_disable}
+{$txtDisable}
+{$urlDisable}
+{nl}{nl}
+{$footer}

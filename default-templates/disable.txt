@@ -1,0 +1,5 @@
+{$header} {$blogName}
+{nl}{nl}
+{$txtDisabled}
+{nl}{nl}
+{$footer}

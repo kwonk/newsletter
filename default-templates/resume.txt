@@ -1,0 +1,9 @@
+{$header} {$blogName}
+{nl}{nl}
+{$txtResume}{nl}
+{$txtMode}
+{nl}{nl}
+{$urlResume}
+{nl}{nl}
+{$footer}
+{nl}{nl}

@@ -1,0 +1,27 @@
+	<h2 class="post-title">{{tpl:lang Newsletters}}</h2>
+  <tpl:NewsletterEntries no_content="1">
+    <tpl:EntriesHeader>
+    </tpl:EntriesHeader>
+  	
+    <div id="p{{tpl:EntryID}}" class="post {{tpl:EntryIfOdd}} {{tpl:EntryIfFirst}}" lang="{{tpl:EntryLang}}" xml:lang="{{tpl:EntryLang}}">
+
+	<li class="post-content"><a href="{{tpl:EntryURL}}">{{tpl:EntryTitle encode_html="1"}} </a></li>
+
+    <p class="post-info">{{tpl:lang By}} {{tpl:EntryAuthorLink}}
+    {{tpl:lang on}} {{tpl:EntryDate}}, {{tpl:EntryTime}}
+    </p>
+    </div>
+    
+    <tpl:EntriesFooter>
+    
+      <tpl:Pagination>
+        <p class="pagination"><tpl:PaginationIf end="0"><a href="{{tpl:PaginationURL offset="+1"}}" class="prev">&#171;
+        {{tpl:lang previous newsletters}}</a> - </tpl:PaginationIf>
+        {{tpl:lang page}} {{tpl:PaginationCurrent}} {{tpl:lang of}} {{tpl:PaginationCounter}}
+        <tpl:PaginationIf start="0"> - <a href="{{tpl:PaginationURL offset="-1"}}" class="next">{{tpl:lang next newsletters}}
+        &#187;</a></tpl:PaginationIf></p>
+      </tpl:Pagination>
+    </tpl:EntriesFooter>
+    
+  </tpl:NewsletterEntries>
+

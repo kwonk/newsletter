@@ -1,0 +1,5 @@
+{$header} {$blogName}
+{nl}{nl}
+{$txtChangingMode}
+{nl}{nl}
+{$footer}

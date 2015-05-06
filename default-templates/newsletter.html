@@ -1,0 +1,37 @@
+<p>
+{$header}&nbsp;<a href="{$blogUrl}">{$blogName}</a>
+</p>
+
+<p>{$txtIntroductoryMsg}<p>
+
+<hr />
+
+<p>{$txtHeading}<p>
+
+
+<div class="letter-post">
+{loop:posts}
+<h2 class="post-title">
+<a href="posts.url">posts.title</a>
+</h2>
+<p class="post-info">
+(posts.date {$txtBy} posts.author)
+</p>
+<p class="post-content">
+posts.content
+</p>
+{/loop}
+</div>
+
+<hr />
+
+<p>
+USER_DELETE<br />
+<br />
+</p>
+
+<p>
+<span class="letter-visu">LINK_VISU_ONLINE</span>
+</p>
+
+<p>{$footer}</p>
