@@ -382,4 +382,5 @@ $GLOBALS['__l10n']['Back'] = 'Retour';
 $GLOBALS['__l10n']['unable to reload'] = 'Erreur lors du rechargement';
 $GLOBALS['__l10n']['%d subscriber'] = '%d abonné';
 $GLOBALS['__l10n']['%d subscribers'] = '%d abonnés';
-?>
+$GLOBALS['__l10n']['Link or subscription form'] = 'Lien ou formulaire d\'abonnement';
+$GLOBALS['__l10n']['List of newsletters'] = 'Liste des newsletters';

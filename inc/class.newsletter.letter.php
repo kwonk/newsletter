@@ -1758,5 +1758,3 @@ class newsletterLetter
 		}
 	}
 }
-
-?>

@@ -23,15 +23,13 @@ $this->registerModule(
 		/* Author */
 		"Benoit de Marne",
 		/* Version */
-		'3.9.6',
+		'3.9.7',
 		/* Properties */
 		array(
 				'permissions' => 'newsletter,contentadmin',
 				'type' => 'plugin',
 				'dc_min' => '2.7',
-				'support' => 'http://forum.dotclear.org/viewtopic.php?id=47581',
+				'support' => 'http://forum.dotclear.org/viewtopic.php?id=333182',
 				'details' => 'http://plugins.dotaddict.org/dc2/details/newsletter'
 		)		
 );
-
-?>

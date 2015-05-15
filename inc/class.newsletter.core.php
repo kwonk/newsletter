@@ -3,7 +3,7 @@
 #
 # This file is part of newsletter, a plugin for Dotclear 2.
 # 
-# Copyright (c) 2009-2014 Benoit de Marne and contributors
+# Copyright (c) 2009-2015 Benoit de Marne and contributors
 # benoit.de.marne@gmail.com
 # Many thanks to Association Dotclear
 # 
@@ -1772,5 +1772,3 @@ class newsletterCore
 	}
 	
 } // end class newsletterCore
-
-?>

@@ -3,7 +3,7 @@
 #
 # This file is part of newsletter, a plugin for Dotclear 2.
 # 
-# Copyright (c) 2009-2014 Benoit de Marne and contributors
+# Copyright (c) 2009-2015 Benoit de Marne and contributors
 # benoit.de.marne@gmail.com
 # Many thanks to Association Dotclear
 # 
@@ -56,5 +56,3 @@ $_s->newsletter->index	('idx_newsletter_lastsent', 'btree', 'lastsent');
 // ====================================================================================================
 
 $_s->newsletter->reference	('fk_newsletter_blog', 'blog_id', 'blog', 'blog_id', 'cascade', 'cascade');
-
-?>

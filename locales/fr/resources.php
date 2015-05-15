@@ -3,7 +3,7 @@
 #
 # This file is part of newsletter, a plugin for Dotclear 2.
 # 
-# Copyright (c) 2009-2013 Benoit de Marne and contributors
+# Copyright (c) 2009-2015 Benoit de Marne and contributors
 # benoit.de.marne@gmail.com
 # Many thanks to Association Dotclear
 # 
@@ -14,7 +14,5 @@
 # -- END LICENSE BLOCK ------------------------------------
 
 if (!isset($__resources['help']['newsletter'])) {
-$__resources['help']['newsletter'] = dirname(__FILE__).'/help/help.html';
+$__resources['help']['newsletter'] = dirname(__FILE__).'/help/newsletter.html';
 }
-
-?>

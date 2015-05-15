@@ -3,7 +3,7 @@
 #
 # This file is part of newsletter, a plugin for Dotclear 2.
 # 
-# Copyright (c) 2009-2014 Benoit de Marne and contributors
+# Copyright (c) 2009-2015 Benoit de Marne and contributors
 # benoit.de.marne@gmail.com
 # Many thanks to Association Dotclear
 # 
@@ -25,9 +25,10 @@ class newsletterWidgets
 		global $core, $plugin_name;
       	try {
       		# widget newsletter
-			$w->create('newsletter', 'Newsletter', array('publicWidgetsNewsletter', 'initWidgets'));
+			$w->create('newsletter', 'Newsletter', array('publicWidgetsNewsletter', 'initWidgets'),
+			null,
+			__('Link or subscription form'));
 			$w->newsletter->setting('title', __('Title').' : ', __('Newsletter'));
-			$w->newsletter->setting('showtitle', __('Show title'), true, 'check');
 			$w->newsletter->setting('inwidget', __('Print subscription form in widget'), false, 'check');
 									
 			$w->newsletter->setting('subscription_link',__('Text of subscription link').' : ',__('Subscription link'));
@@ -37,12 +38,17 @@ class newsletterWidgets
 					__('Home page only') => 1,
 					__('Except on home page') => 2
 				)
-			);
+      );
+      $w->newsletter->setting('content_only',__('Content only'),0,'check');
+      $w->newsletter->setting('class',__('CSS class:'),'');
+  		$w->newsletter->setting('offline',__('Offline'),0,'check');
+
 
 			# widget newsletters
-			$w->create('listnsltr', 'Newsletters', array('publicWidgetsNewsletter', 'listnsltrWidget'));
+			$w->create('listnsltr', 'Newsletters', array('publicWidgetsNewsletter', 'listnsltrWidget'),
+			null,
+			__('List of newsletters'));
 			$w->listnsltr->setting('title', __('Title').' : ', __('Newsletters'));
-			$w->listnsltr->setting('showtitle', __('Show title'), true, 'check');
 			$w->listnsltr->setting('limit',__('Limit (empty means no limit):'),'5');			
 			$w->listnsltr->setting('orderby',__('Order by'),'name','combo',
 			array(__('Newsletter name') => 'name', __('Newsletter date') => 'date'));
@@ -55,11 +61,13 @@ class newsletterWidgets
 					__('Except on home page') => 2
 				)
 			);
+      $w->listnsltr->setting('content_only',__('Content only'),0,'check');
+      $w->listnsltr->setting('class',__('CSS class:'),'');
+  		$w->listnsltr->setting('offline',__('Offline'),0,'check');
+			
 	      
 		} catch (Exception $e) { 
 			$core->error->add($e->getMessage()); 
 		}
 	}
 }
-	
-?>

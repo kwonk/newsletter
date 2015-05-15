@@ -1,3 +1,10 @@
+Newsletter 3.9.7 - 2015-05-13
+===========================================================
+* Mise a jour de la licence
+* Ajout des modifications des widgets (gestion des titres) par brol
+* Changement d'utilisation de la fonction on() en remplacement à live() par jquery
+* Suppression des ?> en fin de fichiers php
+
 Newsletter 3.9.6 - 2015-05-06
 ===========================================================
 * Mise en conformité Dotclear 2.7

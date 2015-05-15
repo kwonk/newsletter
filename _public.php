@@ -3,7 +3,7 @@
 #
 # This file is part of newsletter, a plugin for Dotclear 2.
 # 
-# Copyright (c) 2009-2014 Benoit de Marne and contributors
+# Copyright (c) 2009-2015 Benoit de Marne and contributors
 # benoit.de.marne@gmail.com
 # Many thanks to Association Dotclear
 # 
@@ -806,6 +806,9 @@ class publicWidgetsNewsletter
 		$blog_settings =& $core->blog->settings->newsletter;
 		$system_settings =& $core->blog->settings->system;
 
+		if ($w->offline)
+			return;
+
 		try {
 			# get state of plugin
 			$newsletter_flag = (boolean)$blog_settings->newsletter_flag;
@@ -816,11 +819,8 @@ class publicWidgetsNewsletter
 				($w->homeonly == 2 && $core->url->type == 'default')) {
 				return;
 			}
-
-			$title = ($w->title) ? html::escapeHTML($w->title) : 'Newsletter';
 			
-			$res  = '<div class="newsletter-widget">';
-			$res .= ($w->showtitle) ? '<h2>'.$title.'</h2>' : '';			
+			$res  = ($w->title ? $w->renderTitle(html::escapeHTML($w->title)) : '');
 
 			# mise en place du contenu du widget
 			if ($w->inwidget) {
@@ -913,8 +913,7 @@ class publicWidgetsNewsletter
 			# affichage dynamique
 			$res .= '<div id="newsletter-pub-message"></div>';
 				
-			$res .= '</div>';
-			return $res;
+			return $w->renderDiv($w->content_only,'newsletter-widget '.$w->class,'',$res);
 
 		} catch (Exception $e) {
 			$core->error->add($e->getMessage());
@@ -925,6 +924,9 @@ class publicWidgetsNewsletter
 	public static function listnsltrWidget($w)
 	{
 		global $core,$_ctx;
+
+		if ($w->offline)
+			return;
 	
 		if (($w->homeonly == 1 && $core->url->type != 'default') ||
 			($w->homeonly == 2 && $core->url->type == 'default')) {
@@ -959,9 +961,7 @@ class publicWidgetsNewsletter
 		}
 		$rsnsltr = $core->blog->dcNewsletter->getNewsletters($params);
 
-		$title = $w->title ? html::escapeHTML($w->title) : 'Newsletters';
-		$res =
-			'<div class="listnsltr"><h2>'.$title.'</h2>'.
+		$res  = ($w->title ? $w->renderTitle(html::escapeHTML($w->title)) : '').
 			'<ul>';
 		while ($rsnsltr->fetch()) {
 			$nsltrLink = '<a href="'.$rsnsltr->getURL().'">'.html::escapeHTML($rsnsltr->post_title).'</a>';
@@ -971,10 +971,8 @@ class publicWidgetsNewsletter
 
 		$res .= '<p class="allnsltr"><a href="'.$core->blog->url.$core->url->getBase("newsletters").'">'.
 			__('All newsletters').'</a></p>';
-				
-		$res .= '</div>';
-
-		return $res;
+			
+    return $w->renderDiv($w->content_only,'listnsltr '.$w->class,'',$res);
 	}
 }
 
@@ -1085,5 +1083,3 @@ class dcNewsletterPubRest
 		return $rsp;
 	}		
 }
-
-?>
