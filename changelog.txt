@@ -1,7 +1,7 @@
 Newsletter 3.9.7 - 2015-05-13
 ===========================================================
 * Mise a jour de la licence
-* Ajout des modifications des widgets (gestion des titres) par brol
+* Ajout des modifications des widgets (gestion des titres) par Pierre Van Glabeke
 * Changement d'utilisation de la fonction on() en remplacement à live() par jquery
 * Suppression des ?> en fin de fichiers php
 
