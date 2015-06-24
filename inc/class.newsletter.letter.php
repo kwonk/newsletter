@@ -194,7 +194,7 @@ class newsletterLetter
 		$can_delete = false;
 		
 		$post_headlink = '<link rel="%s" title="%s" href="'.html::escapeURL($redir_url).'&id=%s" />';
-		$post_link = '<a href="'.html::escapeURL($redir_url).'&id=%s" title="%s">%s</a>';
+		$post_link = '<a href="'.html::escapeURL($redir_url).'&amp;id=%s" title="%s">%s</a>';
 		
 		$next_link = $prev_link = $next_headlink = $prev_headlink = null;
 		
@@ -510,10 +510,10 @@ class newsletterLetter
 		*/
 		
 		if (!empty($_GET['upd'])) {
-			dcPage::success(__('Page has been successfully updated.'));
+			dcPage::success(__('Letter has been successfully updated.'));
 		}
 		elseif (!empty($_GET['crea'])) {
-			dcPage::success(__('Page has been successfully created.'));
+			dcPage::success(__('Letter has been successfully created.'));
 		}
 		elseif (!empty($_GET['attached'])) {
 			dcPage::success(__('File has been successfully attached.'));
@@ -593,10 +593,9 @@ class newsletterLetter
 									'<div>'.
 									'<h5 id="label_format"><label for="post_format" class="classic">'.__('Text formatting').'</label></h5>'.
 									'<p>'.form::combo('post_format',$available_formats,$post_format,'maximal').'</p>'.
-									'</p>'.
 									'<p class="format_control control_no_xhtml">'.
-									'<a id="convert-xhtml" class="button'.($post_id && $post_format != 'wiki' ? ' hide' : '').'" href="'.
-									'" href="'.html::escapeURL($redir_url).'&amp;id='.$post_id.'&amp;xconv=1">'.
+									'<a id="convert-xhtml" class="button'.($post_id && $post_format != 'wiki' ? ' hide' : '').'"
+                  href="'.html::escapeURL($redir_url).'&amp;id='.$post_id.'&amp;xconv=1">'.
 									__('Convert to XHTML').'</a></p></div>')),
 						'options-box' => array(
 							'title' => __('Options'),
@@ -741,9 +740,8 @@ class newsletterLetter
 			# attach posts
 			if ($post_id)
 			{
-				echo
-				'<div id="link_posts" class="clear"><fieldset>';
 				echo '<h3 class="clear">'.__('Entries linked').'</h3>';
+				echo '<div id="link_posts" class="clear fieldset">';
 					
 				$meta = $core->meta;
 					
@@ -811,8 +809,9 @@ class newsletterLetter
 						'LINK_VISU_ONLINE' => __('displays the link to the newsletter up on your blog'),
 						'USER_DELETE' => __('displays the delete link of the user subscription'),
 						'USER_SUSPEND' => __('displays the link suspension of the user subscription'));		
-		
-		echo '<h3>'.__('Information').'</h3>';
+
+
+		echo '<h3 class="clear">'.__('Informations').'</h3>';
 		echo '<div class="fieldset">';
 		echo '<div class="col">';
 		echo '<h4>'.__('List of keywords').'</h4>';
@@ -822,7 +821,7 @@ class newsletterLetter
 		}			
 		echo '</ul>';
 		echo '</div>';
-		echo '</div>';	
+		echo '</div>';
 	}
 			
 	

@@ -1,0 +1,1801 @@
+# Language: Français
+# Module: newsletter - 3.9.7
+# Date: 2015-05-17 21:25:03
+# Translated with translater 2015.03.02
+
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: newsletter 3.9.7\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-05-17T21:25:03+00:00\n"
+"Last-Translator: brol\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: _admin.php:49
+msgid "New"
+msgstr "Nouvelle"
+
+#: _admin.php:92
+msgid "manage newsletters"
+msgstr "gestion des newsletters"
+
+#: _install.php:81
+msgid "Unable to install the plugin Newsletter"
+msgstr "Impossible d'installer le plugin Newsletter"
+
+#: _public.php:96
+msgid "Test display template"
+msgstr "Test d'affichage du template"
+
+#: _public.php:100
+msgid "About Newsletter"
+msgstr "A propos de Newsletter"
+
+#: _public.php:111
+#: _public.php:127
+#: _public.php:143
+#: _public.php:159
+#: _public.php:175
+#: inc/index.subscribers.php:167
+msgid "Missing informations"
+msgstr "Informations manquantes"
+
+#: _public.php:115
+msgid "Your subscription code is invalid"
+msgstr "Votre code d'inscription est invalide"
+
+#: _public.php:117
+msgid "Account already confirmed"
+msgstr "Abonnement déja confirmé"
+
+#: _public.php:120
+msgid "Your subscription is confirmed"
+msgstr "Votre inscription est confirmée"
+
+#: _public.php:120
+#: _public.php:136
+#: _public.php:152
+#: _public.php:168
+#: _public.php:182
+msgid "You will soon receive an email"
+msgstr "Vous allez bientôt recevoir un email"
+
+#: _public.php:131
+#: _public.php:147
+msgid "Unable to find your account informations"
+msgstr "Impossible de trouver les informations sur votre abonnement"
+
+#: _public.php:133
+msgid "Account already enabled"
+msgstr "Abonnement déja activé"
+
+#: _public.php:136
+#: inc/class.newsletter.core.php:1470
+msgid "Your account is enabled"
+msgstr "Votre abonnement est activé"
+
+#: _public.php:149
+msgid "Account already disabled"
+msgstr "Abonnement déja désactivé"
+
+#: _public.php:152
+#: inc/class.newsletter.core.php:1463
+msgid "Your account is disabled"
+msgstr "Votre abonnement est désactivé"
+
+#: _public.php:163
+#: _public.php:179
+msgid "Unable to find you account informations"
+msgstr "Impossible de trouver les informations de votre compte"
+
+#: _public.php:165
+msgid "Account already suspended"
+msgstr "Abonnement déjà suspendu"
+
+#: _public.php:168
+#: inc/class.newsletter.core.php:1456
+msgid "Your account is suspended"
+msgstr "Votre abonnement est suspendu"
+
+#: _public.php:182
+msgid "Your sending format is"
+msgstr "Votre format d'envoi est"
+
+#: _public.php:190
+#: _public.php:1036
+msgid "No email specified"
+msgstr "Pas d'email saisi"
+
+#: _public.php:192
+#: _public.php:1038
+#: inc/class.newsletter.core.php:217
+msgid "The given email is invalid"
+msgstr "L'adresse email est invalide"
+
+#: _public.php:197
+#: _public.php:1043
+msgid "No option specified"
+msgstr "Pas d'option saisie"
+
+#: _public.php:206
+#: _public.php:1052
+msgid "No captcha specified"
+msgstr "Code non saisi"
+
+#: _public.php:211
+#: _public.php:1057
+msgid "Error in captcha function"
+msgstr "Erreur dans la fonction de vérification du code visuel"
+
+#: _public.php:217
+#: _public.php:1063
+msgid "Bad captcha code"
+msgstr "Code visuel incorrect"
+
+#: _public.php:240
+#: _public.php:1086
+msgid "Error in formular"
+msgstr "Erreur dans le formulaire"
+
+#: _public.php:288
+msgid "Back"
+msgstr "Retour"
+
+#: _public.php:323
+#: _public.php:429
+#: _public.php:892
+msgid "Unsubscribe"
+msgstr "Se désabonner"
+
+#: _public.php:326
+#: _public.php:423
+#: _public.php:886
+#: inc/index.subscribers.php:372
+msgid "Suspend"
+msgstr "Suspendre"
+
+#: _public.php:329
+#: _public.php:427
+#: _public.php:890
+#: inc/index.properties.php:747
+msgid "Resume"
+msgstr "Résumé"
+
+#: _public.php:338
+#: _public.php:452
+#: _public.php:905
+#: inc/index.properties.php:770
+msgid "Captcha"
+msgstr "Code visuel (captcha)"
+
+#: _public.php:344
+#: _public.php:389
+#: _public.php:866
+#: inc/index.properties.php:600
+#: inc/index.subscribers.php:335
+#: inc/index.subscribers.php:392
+msgid "html"
+msgstr "html"
+
+#: _public.php:347
+#: _public.php:390
+#: _public.php:867
+#: inc/index.properties.php:599
+#: inc/index.subscribers.php:334
+#: inc/index.subscribers.php:393
+msgid "text"
+msgstr "texte"
+
+#: _public.php:332
+msgid "Email address"
+msgstr "Adresse email"
+
+#: _public.php:350
+#: _public.php:387
+#: _public.php:864
+msgid "Format"
+msgstr "Format"
+
+#: _public.php:353
+#: _public.php:419
+#: _public.php:883
+msgid "Change format"
+msgstr "Changer le format"
+
+#: _public.php:453
+#: _public.php:453
+#: _public.php:906
+#: _public.php:906
+msgid "Reload captcha"
+msgstr "Recharger le code visuel"
+
+#: _public.php:856
+msgid "Email address: "
+msgstr "Adresse email : "
+
+#: _public.php:907
+msgid "Enter the text"
+msgstr "Saisissez le texte"
+
+#: _public.php:925
+#: _widgets.php:34
+msgid "Subscription link"
+msgstr "S'abonner"
+
+#: _public.php:988
+msgid "All newsletters"
+msgstr "Toutes les newsletters"
+
+#: _public.php:1002
+msgid "Cannot load imgname"
+msgstr "Impossible de charge imgname"
+
+#: _services.php:124
+#: inc/class.newsletter.core.php:1162
+#: inc/class.newsletter.core.php:1258
+#: inc/class.newsletter.core.php:1304
+#: inc/class.newsletter.core.php:1355
+#: inc/class.newsletter.core.php:1401
+#: inc/class.newsletter.core.php:1494
+#: inc/class.newsletter.core.php:1541
+#: inc/class.newsletter.letter.php:1361
+msgid "Links:"
+msgstr "Liens:"
+
+#: _uninstall.php:23
+msgid "delete all settings"
+msgstr "supprimer tous les paramètres"
+
+#: _uninstall.php:30
+msgid "delete table"
+msgstr "supprimer la table de la base de données"
+
+#: _uninstall.php:37
+msgid "delete plugin files"
+msgstr "supprimer les fichiers du plugin"
+
+#: _uninstall.php:44
+msgid "delete the version number"
+msgstr "supprimer le numéro de version"
+
+#: _uninstall.php:54
+msgid "delete newsletter plugin files"
+msgstr "supprimer les fichiers du plugin newsletter"
+
+#: _uninstall.php:61
+msgid "delete newsletter version number"
+msgstr "supprimer le numéro de version de newsletter"
+
+#: _widgets.php:28
+msgid "Newsletter: subscription form"
+msgstr "Newsletter : formulaire d'abonnement"
+
+#: _widgets.php:30
+msgid "Link or subscription form"
+msgstr "Lien ou formulaire d'abonnement"
+
+#: _widgets.php:31
+#: inc/class.newsletter.settings.php:942
+#: inc/index.letters.php:215
+#: inc/index.subscribers.php:363
+#: inc/index.subscribers.php:378
+msgid "Newsletter"
+msgstr "Newsletter"
+
+#: _widgets.php:32
+msgid "Print subscription form in widget"
+msgstr "Affiche le formulaire d'abonnement dans un widget"
+
+#: _widgets.php:34
+msgid "Text of subscription link"
+msgstr "Texte du lien d'abonnement"
+
+#: _widgets.php:50
+msgid "List of newsletters"
+msgstr "Liste des newsletters"
+
+#: _widgets.php:51
+msgid "Newsletters"
+msgstr "Newsletters"
+
+#: _widgets.php:53
+msgid "Order by"
+msgstr "Ordre de tri"
+
+#: _widgets.php:54
+msgid "Newsletter name"
+msgstr "Nom de la newsletter"
+
+#: _widgets.php:54
+msgid "Newsletter date"
+msgstr "Date de la newsletter"
+
+#: inc/class.newsletter.admin.php:88
+msgid "No data found"
+msgstr "Aucune donnée trouvée"
+
+#: inc/class.newsletter.admin.php:100
+msgid "Export file not found"
+msgstr "Fichier d'export non trouvé"
+
+#: inc/class.newsletter.admin.php:142
+msgid "Failed to compress export file"
+msgstr "Erreur dans la compression du fichier d'export"
+
+#: inc/class.newsletter.admin.php:146
+msgid "Error during export"
+msgstr "Erreur pendant l'export"
+
+#: inc/class.newsletter.admin.php:170
+msgid "Unable to move uploaded file"
+msgstr "Impossible de déplacer le fichier téléverser"
+
+#: inc/class.newsletter.admin.php:212
+#: inc/class.newsletter.admin.php:323
+msgid "is not a valid email address"
+msgstr "n'est pas une adresse email valide"
+
+#: inc/class.newsletter.admin.php:236
+#: inc/class.newsletter.admin.php:239
+#: inc/class.newsletter.admin.php:345
+#: inc/class.newsletter.admin.php:348
+msgid "No file to read"
+msgstr "Pas de fichier à lire"
+
+#: inc/class.newsletter.admin.php:252
+msgid "File is empty or not a compressed file."
+msgstr "Le fichier est vide ou n'est pas un fichier compressé."
+
+#: inc/class.newsletter.admin.php:271
+msgid "Another file with same name exists"
+msgstr "Un fichier existe déjà avec le même nom"
+
+#: inc/class.newsletter.admin.php:278
+msgid "Failed to extract backup file"
+msgstr "Erreur dans l'extraction du fichier de sauvegarde"
+
+#: inc/class.newsletter.admin.php:289
+msgid "No backup in compressed file"
+msgstr "Pas de sauvegarde dans le fichier compressé"
+
+#: inc/class.newsletter.admin.php:361
+msgid "No template to adapt"
+msgstr "Aucun template à adapter"
+
+#: inc/class.newsletter.admin.php:380
+msgid "is not in your theme folder."
+msgstr "n'est pas dans le répertoire du thème."
+
+#: inc/class.newsletter.admin.php:384
+#: inc/class.newsletter.admin.php:494
+msgid "is not in the plugin folder."
+msgstr "n'est pas dans la répertoire du plugin."
+
+#: inc/class.newsletter.admin.php:388
+msgid "is not readable."
+msgstr "n'est pas lisible."
+
+#: inc/class.newsletter.admin.php:475
+#: inc/class.newsletter.admin.php:581
+msgid "Template created"
+msgstr "Template créé"
+
+#: inc/class.newsletter.admin.php:477
+#: inc/class.newsletter.admin.php:583
+msgid "Unable to write file"
+msgstr "Impossible d'écrire le fichier"
+
+#: inc/class.newsletter.behaviors.public.php:49
+#: inc/index.letters.php:307
+#: inc/index.subscribers.php:475
+msgid "Waiting..."
+msgstr "Veuillez patientez..."
+
+#: inc/class.newsletter.behaviors.public.php:52
+msgid "unable to reload"
+msgstr "Erreur lors du rechargement"
+
+#: inc/class.newsletter.behaviors.public.php:53
+msgid "has successfully registered"
+msgstr "a été enregistré avec succès"
+
+#: inc/class.newsletter.behaviors.public.php:104
+msgid "Error adding subscriber."
+msgstr "Erreur lors de l'ajout de l'abonné."
+
+#: inc/class.newsletter.core.php:209
+msgid "You must input an email"
+msgstr "Vous devez entrer un email"
+
+#: inc/class.newsletter.core.php:221
+msgid "The email already exist"
+msgstr "L'adresse email existe déjà"
+
+#: inc/class.newsletter.core.php:947
+msgid ", by"
+msgstr ", par"
+
+#: inc/class.newsletter.core.php:1065
+msgid "Successful mail sent for"
+msgstr "Mail envoyé avec succès pour"
+
+#: inc/class.newsletter.core.php:1068
+msgid "Mail sent error for"
+msgstr "Echec de l'envoi du mail pour"
+
+#: inc/class.newsletter.core.php:1073
+msgid "Nothing to send for"
+msgstr "Rien à envoyer pour"
+
+#: inc/class.newsletter.core.php:1475
+msgid "Your account is pending confirmation"
+msgstr "Votre abonnement est en attente de confirmation"
+
+#: inc/class.newsletter.core.php:1485
+msgid "Your sending mode is %s"
+msgstr "Votre mode d'envoi est %s"
+
+#: inc/class.newsletter.core.php:1646
+#: inc/class.newsletter.core.php:1678
+#: inc/class.newsletter.core.php:1705
+#: inc/class.newsletter.core.php:1731
+#: inc/class.newsletter.core.php:1756
+msgid "Bad email"
+msgstr "Email incorrect"
+
+#: inc/class.newsletter.core.php:1649
+msgid "Email already subscribed"
+msgstr "Email déjà abonné"
+
+#: inc/class.newsletter.core.php:1651
+msgid "Error during account creation"
+msgstr "Erreur dans la création de l'abonnement"
+
+#: inc/class.newsletter.core.php:1684
+#: inc/class.newsletter.core.php:1711
+#: inc/class.newsletter.core.php:1737
+#: inc/class.newsletter.core.php:1762
+msgid "Email does not exist"
+msgstr "Email n'existe pas"
+
+#: inc/class.newsletter.css.php:104
+#: inc/index.properties.php:260
+msgid "No template selected"
+msgstr "Aucun template sélectionné"
+
+#: inc/class.newsletter.letter.php:131
+msgid "This letter does not exist"
+msgstr "Cette lettre n'existe pas"
+
+#: inc/class.newsletter.letter.php:187
+#: inc/class.newsletter.letter.php:677
+msgid "New letter"
+msgstr "Nouvelle lettre"
+
+#: inc/class.newsletter.letter.php:235
+msgid "This letter does not exist."
+msgstr "Cette lettre n'existe pas."
+
+#: inc/class.newsletter.letter.php:257
+#: inc/class.newsletter.letter.php:677
+#: inc/class.newsletter.letter.php:683
+msgid "Edit letter"
+msgstr "Editer la lettre"
+
+#: inc/class.newsletter.letter.php:267
+msgid "Next letter"
+msgstr "Lettre suivante"
+
+#: inc/class.newsletter.letter.php:274
+msgid "Previous letter"
+msgstr "Lettre précédente"
+
+#: inc/class.newsletter.letter.php:487
+msgid "Are you sure you want to delete this letter?"
+msgstr "Etes-vous sûr de vouloir supprimer cette lettre ?"
+
+#: inc/class.newsletter.letter.php:513
+msgid "Letter has been successfully updated."
+msgstr "La lettre a été mise à jour avec succès."
+
+#: inc/class.newsletter.letter.php:516
+msgid "Letter has been successfully created."
+msgstr "La lettre a été créée avec succès."
+
+#: inc/class.newsletter.letter.php:536
+msgid "Go to this letter on the site"
+msgstr "Voir cette lettre sur le site"
+
+#: inc/class.newsletter.letter.php:562
+msgid "View letter"
+msgstr "Voir la lettre"
+
+#: inc/class.newsletter.letter.php:569
+msgid "Preview letter"
+msgstr "Prévisualiser la lettre"
+
+#: inc/class.newsletter.letter.php:581
+msgid "Letter status"
+msgstr "État de la lettre"
+
+#: inc/class.newsletter.letter.php:589
+msgid "Letter language"
+msgstr "Langue de la lettre"
+
+#: inc/class.newsletter.letter.php:630
+msgid "Hide in widget Newsletters"
+msgstr "Ne pas lister dans le widget Newsletters"
+
+#: inc/class.newsletter.letter.php:642
+msgid "Warning: If you set the URL manually, it may conflict with another letter."
+msgstr "Attention : si vous indiquez l'URL manuellement, celle-ci peut entrer en conflit avec une autre lettre."
+
+#: inc/class.newsletter.letter.php:654
+msgid "Introduction to the letter."
+msgstr "Introduction à la lettre."
+
+#: inc/class.newsletter.letter.php:743
+msgid "Entries linked"
+msgstr "Billets liés"
+
+#: inc/class.newsletter.letter.php:780
+msgid "Add many posts to this letter"
+msgstr "Ajout des billets à cette lettre"
+
+#: inc/class.newsletter.letter.php:808
+msgid "displays a list of posts attached"
+msgstr "affiche la liste des billets liés"
+
+#: inc/class.newsletter.letter.php:809
+msgid "displays the link to the newsletter up on your blog"
+msgstr "affiche le lien vers la lettre d'information visible sur votre blog"
+
+#: inc/class.newsletter.letter.php:810
+msgid "displays the delete link of the user subscription"
+msgstr "affiche le lien de suppression de l'abonnement pour l'utilisateur"
+
+#: inc/class.newsletter.letter.php:811
+msgid "displays the link suspension of the user subscription"
+msgstr "affiche le lien de suspension de l'abonnement pour l'utilisateur"
+
+#: inc/class.newsletter.letter.php:814
+msgid "Informations"
+msgstr "Informations"
+
+#: inc/class.newsletter.letter.php:817
+msgid "List of keywords"
+msgstr "Liste des mot-clés"
+
+#: inc/class.newsletter.letter.php:1452
+#: inc/class.newsletter.letter.php:1460
+msgid "Associate posts for this letter"
+msgstr "Billets associés à cette lettre"
+
+#: inc/class.newsletter.letter.php:1454
+msgid "Title of letter :"
+msgstr "Titre de la lettre :"
+
+#: inc/class.newsletter.letter.php:1457
+#: inc/class.newsletter.letter.php:1465
+#: inc/index.subscribers.php:595
+#: inc/index.subscribers.php:619
+#: inc/lib.newsletter.letters.list.php:325
+#: inc/lib.newsletter.letters.list.php:376
+#: inc/lib.newsletter.subscribers.list.php:207
+#: inc/lib.newsletter.subscribers.list.php:282
+msgid "back"
+msgstr "retour"
+
+#: inc/class.newsletter.letter.php:1538
+#: inc/lib.newsletter.letters.list.php:155
+#: inc/lib.newsletter.linked.post.list.php:91
+msgid "selected"
+msgstr "sélectionné"
+
+#: inc/class.newsletter.letter.php:1539
+msgid "not selected"
+msgstr "non sélectionné"
+
+#: inc/class.newsletter.letter.php:1572
+msgid "associate"
+msgstr "associé"
+
+#: inc/class.newsletter.letter.php:1697
+msgid "Entries per page"
+msgstr "Lettre par page"
+
+#: inc/class.newsletter.letter.php:1701
+msgid "filter"
+msgstr "filtre"
+
+#: inc/class.newsletter.mail.php:55
+#: inc/class.newsletter.mailing.php:56
+msgid "Editor email is empty"
+msgstr "L'email de l'éditeur est vide"
+
+#: inc/class.newsletter.mail.php:60
+#: inc/class.newsletter.mailing.php:61
+msgid "Editor name is empty"
+msgstr "Le nom de l'éditeur est vide"
+
+#: inc/class.newsletter.settings.php:429
+msgid "Thanks you for reading."
+msgstr "Merci de nous lire."
+
+#: inc/class.newsletter.settings.php:477
+msgid "This is the newsletter for"
+msgstr "Voici la lettre d'information pour"
+
+#: inc/class.newsletter.settings.php:501
+msgid "Here are the last post:"
+msgstr "Voici les derniers billets:"
+
+#: inc/class.newsletter.settings.php:519
+msgid "To confirm your subscription"
+msgstr "Pour confirmer votre inscription"
+
+#: inc/class.newsletter.settings.php:537
+#: inc/class.newsletter.settings.php:573
+#: inc/class.newsletter.settings.php:609
+#: inc/class.newsletter.settings.php:645
+msgid "Click here"
+msgstr "Cliquez ici"
+
+#: inc/class.newsletter.settings.php:555
+msgid "To cancel your account"
+msgstr "Pour supprimer votre abonnement"
+
+#: inc/class.newsletter.settings.php:591
+msgid "To enable your account"
+msgstr "Pour activer votre abonnement"
+
+#: inc/class.newsletter.settings.php:627
+msgid "To suspend your account"
+msgstr "Pour suspendre votre abonnement"
+
+#: inc/class.newsletter.settings.php:663
+#: inc/class.newsletter.settings.php:828
+#: inc/class.newsletter.settings.php:996
+msgid "Newsletter account suspend for"
+msgstr "Suspension d'abonnement à la newsletter pour"
+
+#: inc/class.newsletter.settings.php:792
+msgid "Newsletter for"
+msgstr "Newsletter pour"
+
+#: inc/class.newsletter.settings.php:810
+#: inc/class.newsletter.settings.php:960
+msgid "Newsletter subscription confirmation for"
+msgstr "Confirmation d'inscription pour"
+
+#: inc/class.newsletter.settings.php:846
+#: inc/class.newsletter.settings.php:1032
+msgid "Newsletter account activation for"
+msgstr "Activation d'abonnement à la newsletter pour"
+
+#: inc/class.newsletter.settings.php:864
+#: inc/class.newsletter.settings.php:1086
+msgid "Newsletter account removal for"
+msgstr "Suppression d'abonnement à la newsletter pour"
+
+#: inc/class.newsletter.settings.php:882
+#: inc/class.newsletter.settings.php:1194
+msgid "Newsletter account resume for"
+msgstr "Information sur l'abonnement à la newsletter pour"
+
+#: inc/class.newsletter.settings.php:900
+#: inc/class.newsletter.settings.php:1140
+msgid "Newsletter account change format for"
+msgstr "Changement du format sur l'abonnement à la newsletter pour"
+
+#: inc/class.newsletter.settings.php:978
+#: inc/class.newsletter.settings.php:1050
+msgid "Thank you for subscribing."
+msgstr "Merci pour votre inscription."
+
+#: inc/class.newsletter.settings.php:1014
+#: inc/class.newsletter.settings.php:1104
+#: inc/class.newsletter.settings.php:1158
+#: inc/class.newsletter.settings.php:1212
+msgid "Have a nice day!"
+msgstr "Passez une bonne journée !"
+
+#: inc/class.newsletter.settings.php:1068
+msgid "Your account has been validated."
+msgstr "Votre compte a été validé."
+
+#: inc/class.newsletter.settings.php:1122
+msgid "Your account has been canceled."
+msgstr "Votre compte a été supprimé."
+
+#: inc/class.newsletter.settings.php:1176
+msgid "Your sending format has been updated."
+msgstr "Votre format d'envoi a été mis à jour."
+
+#: inc/class.newsletter.settings.php:1230
+msgid "Thank you for your subscription."
+msgstr "Merci pour votre inscription."
+
+#: inc/class.newsletter.settings.php:1374
+msgid "If you have problems viewing this message, go to the online version."
+msgstr "Si vous avez des difficultés pour visualiser ce message, accédez à la version en ligne."
+
+#: inc/index.letters.php:93
+msgid "no user selected"
+msgstr "pas d'abonné sélectionné"
+
+#: inc/index.letters.php:131
+msgid "not enough posts for sending"
+msgstr "pas assez de billets pour l'envoi"
+
+#: inc/index.letters.php:148
+msgid "no letter selected"
+msgstr "aucune lettre sélectionnée"
+
+#: inc/index.letters.php:198
+#: inc/lib.newsletter.letters.list.php:100
+msgid "Mailing date"
+msgstr "Date d'envoi"
+
+#: inc/index.letters.php:219
+#: inc/index.letters.php:227
+#: inc/index.subscribers.php:370
+#: inc/index.subscribers.php:384
+msgid "Changing state"
+msgstr "Changer l'état"
+
+#: inc/index.letters.php:220
+#: inc/lib.newsletter.letters.list.php:41
+msgid "publish"
+msgstr "publiée"
+
+#: inc/index.letters.php:221
+#: inc/lib.newsletter.letters.list.php:40
+msgid "unpublish"
+msgstr "non publiée"
+
+#: inc/index.letters.php:222
+msgid "mark as pending"
+msgstr "mettre en attente"
+
+#: inc/index.letters.php:227
+msgid "change author"
+msgstr "changer l'auteur"
+
+#: inc/index.letters.php:304
+#: inc/index.subscribers.php:472
+msgid "Search subscribers for letter"
+msgstr "Recherche des abonnés pour la lettre"
+
+#: inc/index.letters.php:305
+#: inc/index.subscribers.php:473
+msgid "Subject"
+msgstr "Sujet"
+
+#: inc/index.letters.php:306
+#: inc/index.subscribers.php:474
+msgid "to user"
+msgstr "pour l'abonné"
+
+#: inc/index.letters.php:308
+#: inc/index.subscribers.php:476
+msgid "%s subscriber(s) found"
+msgstr "%s abonné(s) trouvé(s)"
+
+#: inc/index.letters.php:309
+#: inc/index.subscribers.php:477
+msgid "Are you sure you want to delete selected subscribers"
+msgstr "Etre vous sûr de vouloir supprimer les abonnés sélectionnés"
+
+#: inc/index.letters.php:333
+#: inc/index.subscribers.php:488
+msgid "Are you sure you want to delete selected letters?"
+msgstr "Êtes-vous sûr de vouloir supprimer les lettres sélectionnées?"
+
+#: inc/index.letters.php:334
+#: inc/index.subscribers.php:489
+msgid "Are you sure you want to delete selected subscribers?"
+msgstr "Êtes-vous sûr de vouloir supprimer les abonnés sélectionnés?"
+
+#: inc/index.letters.php:362
+#: inc/index.properties.php:718
+#: inc/index.subscribers.php:516
+msgid "Letters"
+msgstr "Lettres"
+
+#: inc/index.letters.php:363
+#: inc/index.properties.php:719
+#: inc/index.subscribers.php:517
+msgid "Subscribers"
+msgstr "Abonnés"
+
+#: inc/index.letters.php:364
+#: inc/index.properties.php:720
+#: inc/index.subscribers.php:518
+msgid "Properties"
+msgstr "Propriétés"
+
+#: inc/index.letters.php:380
+msgid "New newsletter"
+msgstr "Nouvelle newsletter"
+
+#: inc/index.letters.php:392
+msgid "Letters per page"
+msgstr "Lettres par page"
+
+#: inc/index.letters.php:422
+msgid "Selected letters action:"
+msgstr "Action sur les lettres sélectionnées:"
+
+#: inc/index.properties.php:81
+#: inc/index.properties.php:87
+msgid "Plugin status updated."
+msgstr "Statut du plugin mis à jour."
+
+#: inc/index.properties.php:141
+msgid "Settings updated"
+msgstr "Paramètres mis à jour"
+
+#: inc/index.properties.php:144
+msgid "You must input a valid email"
+msgstr "Vous devez entrer une adresse email valide"
+
+#: inc/index.properties.php:147
+msgid "You must input an editor"
+msgstr "Vous devez entrer un éditeur"
+
+#: inc/index.properties.php:224
+msgid "Messages updated."
+msgstr "Messages mis à jour."
+
+#: inc/index.properties.php:255
+msgid "CSS successfully copied."
+msgstr "CSS copiée avec succès."
+
+#: inc/index.properties.php:257
+msgid "Error to copy CSS to your template"
+msgstr "Erreur lors de la copie du CSS pour votre template"
+
+#: inc/index.properties.php:285
+#: inc/index.properties.php:306
+#: inc/index.properties.php:323
+#: inc/index.properties.php:340
+msgid "Planning updated"
+msgstr "Programmation mise à jour"
+
+#: inc/index.properties.php:287
+msgid "Error during create planning task"
+msgstr "Erreur pendant la création de tâche planifiée"
+
+#: inc/index.properties.php:357
+msgid "Export file name was not defined"
+msgstr "Le nom du fichier de sauvegarde n'est pas défini"
+
+#: inc/index.properties.php:368
+msgid "Datas exported to"
+msgstr "Données exportées dans"
+
+#: inc/index.properties.php:380
+msgid "Import file name was not defined"
+msgstr "Le nom du fichier à importer n'est pas défini"
+
+#: inc/index.properties.php:387
+#: inc/index.properties.php:404
+msgid "Datas imported from"
+msgstr "Données exportées vers"
+
+#: inc/index.properties.php:417
+msgid "Template successfully adapted."
+msgstr "Template adapté avec succès."
+
+#: inc/index.properties.php:419
+msgid "Error to adapt template"
+msgstr "Erreur pour adapter le template"
+
+#: inc/index.properties.php:422
+msgid "No template adapted"
+msgstr "Pas de template adapté"
+
+#: inc/index.properties.php:481
+msgid "text file"
+msgstr "fichier txt"
+
+#: inc/index.properties.php:482
+msgid "data file"
+msgstr "fichier dat"
+
+#: inc/index.properties.php:602
+msgid "creation date"
+msgstr "date de création"
+
+#: inc/index.properties.php:603
+msgid "update date"
+msgstr "date de mise à jour"
+
+#: inc/index.properties.php:604
+msgid "publication date"
+msgstr "date de publication"
+
+#: inc/index.properties.php:686
+msgid "Are you sure you want to delete all informations about newsletter in database?"
+msgstr "Êtes-vous sûr de vouloir supprimer toutes les informations de newsletter dans la base de données ?"
+
+#: inc/index.properties.php:687
+msgid "Are you sure you want to import a backup file?"
+msgstr "Êtes-vous sûr de vouloir importer un fichier de sauvegarde?"
+
+#: inc/index.properties.php:730
+#: inc/index.properties.php:1244
+msgid "Plugin state"
+msgstr "Etat du plugin"
+
+#: inc/index.properties.php:732
+#: inc/index.properties.php:1247
+msgid "Enable plugin"
+msgstr "Activer le plugin"
+
+#: inc/index.properties.php:753
+msgid "Settings"
+msgstr "Paramètres"
+
+#: inc/index.properties.php:759
+msgid "Advanced Settings"
+msgstr "Paramètres avancés"
+
+#: inc/index.properties.php:762
+msgid "Editor name"
+msgstr "Nom de l'éditeur"
+
+#: inc/index.properties.php:766
+msgid "Editor email"
+msgstr "Email de l'éditeur"
+
+#: inc/index.properties.php:774
+msgid "Automatically activate the account"
+msgstr "Auto-activation des abonnés"
+
+#: inc/index.properties.php:778
+msgid "Use default action subscribe in form"
+msgstr "Utiliser l'action par défaut souscription dans les formulaires"
+
+#: inc/index.properties.php:782
+msgid "Use default format for sending"
+msgstr "Utiliser le format par défaut pour l'envoi"
+
+#: inc/index.properties.php:786
+msgid "Default format for sending"
+msgstr "Format par défaut pour l'envoi"
+
+#: inc/index.properties.php:790
+msgid "Notification sending"
+msgstr "Accusé de réception"
+
+#: inc/index.properties.php:794
+msgid "Restrict the preview only to excerpt of posts"
+msgstr "Restreindre l'aperçu à l'extrait des billets"
+
+#: inc/index.properties.php:798
+msgid "View contents posts"
+msgstr "Affiche le contenu des billets"
+
+#: inc/index.properties.php:802
+msgid "Size contents posts"
+msgstr "Taille maximale du contenu des billets"
+
+#: inc/index.properties.php:806
+msgid "View content in text format"
+msgstr "Affiche le contenu au format texte"
+
+#: inc/index.properties.php:810
+msgid "View thumbnails"
+msgstr "Affiche les miniatures"
+
+#: inc/index.properties.php:814
+msgid "Size of thumbnails"
+msgstr "Taille des miniatures"
+
+#: inc/index.properties.php:818
+msgid "Use suspend option"
+msgstr "Utiliser l'option Suspendre"
+
+#: inc/index.properties.php:822
+msgid "Date selection for sorting posts"
+msgstr "Choix de la date pour le tri des billets"
+
+#: inc/index.properties.php:826
+msgid "Automaticly create a subscriber when an user is added in the plugin Agora"
+msgstr "Créer automatiquement un abonné lorsqu'un utilisateur est ajouté dans le plugin Agora"
+
+#: inc/index.properties.php:830
+msgid "Date format for post info"
+msgstr "Format de la date dans l'info des billets"
+
+#: inc/index.properties.php:834
+msgid "Use CSS %s in forms"
+msgstr "Utiliser le CSS %s dans les formulaires"
+
+#: inc/index.properties.php:838
+msgid "Default value for number of subscribers per page"
+msgstr "Valeur par défaut du nombre d'abonnés par page"
+
+#: inc/index.properties.php:844
+msgid "Settings for auto letter"
+msgstr "Paramètres pour la lettre automatique"
+
+#: inc/index.properties.php:847
+msgid "Date for the previous sent"
+msgstr "Date du précédent envoi"
+
+#: inc/index.properties.php:851
+msgid "Automatic send when create post"
+msgstr "Envoi automatique lors de la création d'un billet"
+
+#: inc/index.properties.php:855
+msgid "Automatic send when update post"
+msgstr "Envoi automatique lors de la modification d'un billet"
+
+#: inc/index.properties.php:859
+msgid "Minimum posts"
+msgstr "Nombre minimum de billets"
+
+#: inc/index.properties.php:863
+msgid "Maximum posts"
+msgstr "Nombre maximal de billets"
+
+#: inc/index.properties.php:871
+msgid "Include sub-categories"
+msgstr "Inclure les sous-catégories"
+
+#: inc/index.properties.php:875
+msgid "Add the date in the title of the letter"
+msgstr "Ajoute la date dans le titre de la lettre"
+
+#: inc/index.properties.php:881
+msgid "Settings for the public page for a list of newsletters"
+msgstr "Paramètres de la page publique contenant la liste des newsletters"
+
+#: inc/index.properties.php:884
+msgid "Number per page"
+msgstr "Nombre par page"
+
+#: inc/index.properties.php:888
+msgid "Sort by"
+msgstr "Trier par"
+
+#: inc/index.properties.php:912
+msgid "Planning"
+msgstr "Planification"
+
+#: inc/index.properties.php:919
+#: inc/index.properties.php:999
+msgid "Planning newsletter"
+msgstr "Planification de la newsletter"
+
+#: inc/index.properties.php:921
+msgid "Interval time in seconds between 2 runs"
+msgstr "Intervalle de temps en secondes entre 2 exécutions"
+
+#: inc/index.properties.php:925
+msgid "samples"
+msgstr "exemples"
+
+#: inc/index.properties.php:925
+msgid "day"
+msgstr "jour"
+
+#: inc/index.properties.php:925
+msgid "week"
+msgstr "semaine"
+
+#: inc/index.properties.php:928
+msgid "Date for the first run"
+msgstr "Date de la première exécution"
+
+#: inc/index.properties.php:934
+msgid "Unschedule"
+msgstr "Déplanifier"
+
+#: inc/index.properties.php:949
+msgid "Scheduled task"
+msgstr "Tâche planifiée"
+
+#: inc/index.properties.php:959
+#: inc/index.subscribers.php:348
+#: inc/lib.newsletter.letters.list.php:50
+#: inc/lib.newsletter.subscribers.list.php:41
+msgid "State"
+msgstr "Etat"
+
+#: inc/index.properties.php:963
+msgid "Interval"
+msgstr "Intervalle"
+
+#: inc/index.properties.php:967
+msgid "Last run"
+msgstr "Dernière exécution"
+
+#: inc/index.properties.php:971
+msgid "Next run"
+msgstr "Prochaine exécution"
+
+#: inc/index.properties.php:975
+msgid "Remaining Time"
+msgstr "Temps restant"
+
+#: inc/index.properties.php:985
+#: inc/index.subscribers.php:373
+#: inc/index.subscribers.php:386
+msgid "Disable"
+msgstr "Désactiver"
+
+#: inc/index.properties.php:985
+#: inc/index.subscribers.php:371
+#: inc/index.subscribers.php:385
+msgid "Enable"
+msgstr "Activer"
+
+#: inc/index.properties.php:1000
+msgid "Install the plugin dcCron for using planning"
+msgstr "Installez le plugin dcCron pour utiliser la planification"
+
+#: inc/index.properties.php:1006
+msgid "Messages"
+msgstr "Messages"
+
+#: inc/index.properties.php:1012
+#: inc/index.properties.php:1223
+msgid "Update messages"
+msgstr "Mise à jour des messages"
+
+#: inc/index.properties.php:1019
+msgid "Define message content Newsletter"
+msgstr "Définir le contenu du message Newsletter"
+
+#: inc/index.properties.php:1021
+msgid "Subject of the Newsletter"
+msgstr "Sujet de la Newsletter"
+
+#: inc/index.properties.php:1025
+msgid "Message presentation"
+msgstr "Message de présentation"
+
+#: inc/index.properties.php:1029
+msgid "Introductory message"
+msgstr "Message d'introduction"
+
+#: inc/index.properties.php:1033
+msgid "Presentation message for posts"
+msgstr "Message de présentation pour les billets"
+
+#: inc/index.properties.php:1037
+msgid "Concluding message"
+msgstr "Message de conclusion"
+
+#: inc/index.properties.php:1041
+msgid "Set the link text viewing online"
+msgstr "Définir le texte du lien de visualisation en ligne"
+
+#: inc/index.properties.php:1045
+msgid "Set the link style viewing online"
+msgstr "Définir le style du lien de visualisation en ligne"
+
+#: inc/index.properties.php:1049
+msgid "Set the link style read it"
+msgstr "Définir le style du lien Lire la suite"
+
+#: inc/index.properties.php:1053
+msgid "Set the link style confirm"
+msgstr "Définir le style du lien de confirmation"
+
+#: inc/index.properties.php:1057
+msgid "Set the link style disable"
+msgstr "Définir le style du lien de désactivation"
+
+#: inc/index.properties.php:1061
+msgid "Set the link style enable"
+msgstr "Définir le style du lien d'activation"
+
+#: inc/index.properties.php:1065
+msgid "Set the link style suspend"
+msgstr "Définir le style du lien de suspension"
+
+#: inc/index.properties.php:1070
+msgid "Define formulary content Subscribe"
+msgstr "Définir le contenu du formulaire d'inscription"
+
+#: inc/index.properties.php:1072
+msgid "Title page of the subscribe form"
+msgstr "Titre de la page du formulaire d'abonnement"
+
+#: inc/index.properties.php:1076
+msgid "Message presentation form"
+msgstr "Message de présentation du formulaire"
+
+#: inc/index.properties.php:1080
+msgid "Subcribed message"
+msgstr "Message de sousrciption"
+
+#: inc/index.properties.php:1085
+msgid "Define message content Confirm"
+msgstr "Définir le contenu du message de Confirmation"
+
+#: inc/index.properties.php:1087
+msgid "Subject of the mail Confirm"
+msgstr "Sujet du mail de confirmation"
+
+#: inc/index.properties.php:1091
+msgid "Confirm message"
+msgstr "Message de confirmation"
+
+#: inc/index.properties.php:1095
+msgid "Introductory confirm message"
+msgstr "Introduction au lien de confirmation"
+
+#: inc/index.properties.php:1099
+msgid "Title confirmation link"
+msgstr "Titre du lien de confirmation"
+
+#: inc/index.properties.php:1103
+msgid "Concluding confirm message"
+msgstr "Conclusion du message de confirmation"
+
+#: inc/index.properties.php:1108
+msgid "Define message content Disable"
+msgstr "Définir le contenu du message de Désactivation"
+
+#: inc/index.properties.php:1110
+msgid "Txt disabled msg"
+msgstr "Texte du message de désactivation"
+
+#: inc/index.properties.php:1114
+msgid "Subject of the mail Disable"
+msgstr "Sujet du mail de désactivation"
+
+#: inc/index.properties.php:1118
+msgid "Disable message"
+msgstr "Message de désactivation"
+
+#: inc/index.properties.php:1122
+msgid "Introductory disable message"
+msgstr "Introduction au lien de désactivation"
+
+#: inc/index.properties.php:1126
+msgid "Title disable link"
+msgstr "Titre du lien de désactivation"
+
+#: inc/index.properties.php:1130
+msgid "Concluding disable msg"
+msgstr "Conclusion du message de désactivation"
+
+#: inc/index.properties.php:1135
+msgid "Define message content Enable"
+msgstr "Définir le contenu du message d'activation"
+
+#: inc/index.properties.php:1137
+msgid "Texte enabled message"
+msgstr "Texte du message d'activation"
+
+#: inc/index.properties.php:1141
+msgid "Subject of the mail Enable"
+msgstr "Sujet du mail d'activation"
+
+#: inc/index.properties.php:1145
+msgid "Enable message"
+msgstr "Message d'activation"
+
+#: inc/index.properties.php:1149
+msgid "Introductory enable message"
+msgstr "Introduction au lien d'activation"
+
+#: inc/index.properties.php:1153
+msgid "Title enable link"
+msgstr "Titre du lien d'activation"
+
+#: inc/index.properties.php:1157
+msgid "Concluging enable message"
+msgstr "Conclusion du message d'activation"
+
+#: inc/index.properties.php:1162
+msgid "Define message content Suspend"
+msgstr "Définir le contenu du message de Suspension"
+
+#: inc/index.properties.php:1164
+msgid "Txt suspended msg"
+msgstr "Texte du message de suspension"
+
+#: inc/index.properties.php:1168
+msgid "Subject of the mail Suspend"
+msgstr "Sujet du mail de suspension"
+
+#: inc/index.properties.php:1172
+msgid "Suspend message"
+msgstr "Message de suspension"
+
+#: inc/index.properties.php:1176
+msgid "Introductory suspend message"
+msgstr "Introduction au lien de suspension"
+
+#: inc/index.properties.php:1180
+msgid "Title suspend link"
+msgstr "Titre du lien de suspension"
+
+#: inc/index.properties.php:1184
+msgid "Concluding suspend message"
+msgstr "Conclusion du message de suspension"
+
+#: inc/index.properties.php:1189
+msgid "Define message content Changemode"
+msgstr "Définir le contenu du message de Changement de mode"
+
+#: inc/index.properties.php:1191
+msgid "Change mode message"
+msgstr "Message de changement de mode"
+
+#: inc/index.properties.php:1195
+msgid "Subject of the mail Changing mode"
+msgstr "Sujet du mail de changement de mode"
+
+#: inc/index.properties.php:1199
+msgid "Introductory change mode message"
+msgstr "Introduction au message de changement de mode"
+
+#: inc/index.properties.php:1203
+msgid "Concludind change mode message"
+msgstr "Conclusion au message de changement de mode"
+
+#: inc/index.properties.php:1208
+msgid "Define message content Resume"
+msgstr "Définir le contenu du message de Résumé"
+
+#: inc/index.properties.php:1210
+msgid "Subject of the mail Resume"
+msgstr "Sujet du mail de résumé"
+
+#: inc/index.properties.php:1214
+msgid "Introductory resume message"
+msgstr "Introduction au message résumé"
+
+#: inc/index.properties.php:1218
+msgid "Concluding resume message"
+msgstr "Conclusion au message résumé"
+
+#: inc/index.properties.php:1268
+msgid "This will create an export of subscribers of your current blog: <strong>%s</strong>"
+msgstr "Cela exportera une sauvegarde des abonnés du blog courant : <strong>%s</strong>"
+
+#: inc/index.properties.php:1274
+#: inc/index.properties.php:1302
+#: inc/index.properties.php:1332
+msgid "File format:"
+msgstr "Format du fichier"
+
+#: inc/index.properties.php:1296
+msgid "This will create an export of subscribers of all blog"
+msgstr "Cela exportera une sauvegarde des abonnés de tous les blogs"
+
+#: inc/index.properties.php:1324
+msgid "Import subscribers list"
+msgstr "Importe une liste d'abonnés"
+
+#: inc/index.properties.php:1325
+msgid "This will import a backup of subscribers list on your current blog: <strong>%s</strong>."
+msgstr "Cela importera une sauvegarde des d'une liste d'abonnés dans votre blog courant : <strong>%s</strong>"
+
+#: inc/index.properties.php:1347
+msgid "Importing a list of emails includes in a text file on the current blog"
+msgstr "Importe une liste d'adresses emails contenue dans un fichier texte dans votre blog courant"
+
+#: inc/index.properties.php:1348
+msgid "File to import :"
+msgstr "Fichier à importer :"
+
+#: inc/index.properties.php:1355
+msgid "Launch reprise"
+msgstr "Lancer la reprise"
+
+#: inc/index.properties.php:1364
+#: inc/index.properties.php:1374
+msgid "Adapt"
+msgstr "Adapter"
+
+#: inc/index.properties.php:1368
+msgid "Adapt the template for the theme"
+msgstr "Adapter le template pour le thème"
+
+#: inc/index.properties.php:1369
+msgid "<strong>Caution :</strong> use the theme adapter only if you experience some layouts problems when viewing newsletter form on your blog."
+msgstr "<strong>Attention :</strong> utiliser l'adaptateur de thème uniquement si vous rencontrez des problèmes lors de la visualisation de la page formulaire du plugin newsletter sur votre blog"
+
+#: inc/index.properties.php:1370
+#: inc/index.properties.php:1433
+#: inc/index.properties.php:1478
+msgid "Theme name"
+msgstr "Nom du thème"
+
+#: inc/index.properties.php:1377
+msgid "Clic here to test the template."
+msgstr "Cliquez ici pour tester le template."
+
+#: inc/index.properties.php:1387
+msgid "Cleaning"
+msgstr "Nettoyage"
+
+#: inc/index.properties.php:1390
+msgid "Erasing all informations about newsletter in database"
+msgstr "Suppression de toutes les informations concernant newsletter dans votre base de données"
+
+#: inc/index.properties.php:1391
+msgid "<strong>Caution :</strong> please backup your database before use this option."
+msgstr "<strong>Attention :</strong> vous êtes priés de sauvegarder votre base de données avant d'utiliser cette option"
+
+#: inc/index.properties.php:1393
+msgid "Erasing"
+msgstr "Suppression"
+
+#: inc/index.properties.php:1405
+msgid "CSS for letters"
+msgstr "CSS pour les lettres"
+
+#: inc/index.properties.php:1415
+#: inc/index.properties.php:1460
+msgid "If you want edit the file CSS, please copy the default file %s in your current theme folder."
+msgstr "Si vous désirez éditer le fichier CSS, veuillez copier le fichier par défaut %s dans le répertoire de votre thème courant."
+
+#: inc/index.properties.php:1419
+#: inc/index.properties.php:1464
+#: inc/lib.newsletter.letters.list.php:372
+msgid "save"
+msgstr "sauver"
+
+#: inc/index.properties.php:1431
+#: inc/index.properties.php:1476
+msgid "Copy this CSS to your theme"
+msgstr "Copier ce CSS dans votre thème"
+
+#: inc/index.properties.php:1438
+#: inc/index.properties.php:1483
+msgid "copy to theme"
+msgstr "Copie dans le thème"
+
+#: inc/index.properties.php:1450
+msgid "CSS for forms"
+msgstr "CSS pour les formulaires"
+
+#: inc/index.subscribers.php:76
+msgid "No account changed."
+msgstr "Aucun compte modifié."
+
+#: inc/index.subscribers.php:84
+msgid "Account(s) successfully changed."
+msgstr "Compte(s) mis à jour."
+
+#: inc/index.subscribers.php:86
+msgid "Error in modification of field last sent"
+msgstr "Erreur lors de la modification du champ dernier envoi"
+
+#: inc/index.subscribers.php:146
+msgid "Subscriber added."
+msgstr "Abonné ajouté."
+
+#: inc/index.subscribers.php:148
+msgid "Error adding subscriber"
+msgstr "Erreur lors de l'ajout de l'abonné"
+
+#: inc/index.subscribers.php:174
+msgid "Error to modify a subscriber"
+msgstr "Erreur lors de la mise à jour de l'abonné"
+
+#: inc/index.subscribers.php:176
+msgid "Subscriber updated."
+msgstr "Abonné mis à jour."
+
+#: inc/index.subscribers.php:186
+msgid "No account removed."
+msgstr "Aucun compte supprimé."
+
+#: inc/index.subscribers.php:194
+msgid "Account(s) successfully removed"
+msgstr "Compte(s) supprimé(s)"
+
+#: inc/index.subscribers.php:196
+msgid "Error to remove account(s)"
+msgstr "Erreur lors de la suppression des comptes"
+
+#: inc/index.subscribers.php:206
+msgid "No account suspended."
+msgstr "Aucun compte suspendu."
+
+#: inc/index.subscribers.php:214
+msgid "Account(s) successfully suspended"
+msgstr "Compte(s) suspendu(s)"
+
+#: inc/index.subscribers.php:216
+msgid "Error to suspend account(s)"
+msgstr "Erreur lors de suspension des comptes"
+
+#: inc/index.subscribers.php:226
+msgid "No account enabled."
+msgstr "Aucun compte activé."
+
+#: inc/index.subscribers.php:234
+msgid "Account(s) successfully enabled"
+msgstr "Compte(s) activé(s)"
+
+#: inc/index.subscribers.php:236
+msgid "Error to enable account(s)"
+msgstr "Erreur lors de l'activation des comptes"
+
+#: inc/index.subscribers.php:245
+msgid "No account disabled."
+msgstr "Aucun compte désactivé."
+
+#: inc/index.subscribers.php:254
+msgid "Account(s) successfully disabled"
+msgstr "Compte(s) désactivé(s)"
+
+#: inc/index.subscribers.php:256
+msgid "Error to disable account(s)"
+msgstr "Erreur lors de la désactivation des comptes"
+
+#: inc/index.subscribers.php:265
+#: inc/index.subscribers.php:284
+msgid "No account updated."
+msgstr "Aucun compte mis à jour."
+
+#: inc/index.subscribers.php:273
+msgid "Format sending for account(s) successfully updated to html"
+msgstr "Le format d'envoi pour les comptes est maintenant html"
+
+#: inc/index.subscribers.php:275
+#: inc/index.subscribers.php:294
+msgid "Error in modification format"
+msgstr "Erreur pour modifier le format"
+
+#: inc/index.subscribers.php:292
+msgid "Format sending for account(s) successfully updated to text"
+msgstr "Le format d'envoi pour les comptes est maintenant texte"
+
+#: inc/index.subscribers.php:338
+#: inc/lib.newsletter.subscribers.list.php:31
+#: inc/lib.newsletter.subscribers.list.php:147
+msgid "enabled"
+msgstr "actif"
+
+#: inc/index.subscribers.php:339
+#: inc/lib.newsletter.subscribers.list.php:32
+#: inc/lib.newsletter.subscribers.list.php:156
+msgid "suspended"
+msgstr "suspendu"
+
+#: inc/index.subscribers.php:340
+#: inc/lib.newsletter.subscribers.list.php:33
+#: inc/lib.newsletter.subscribers.list.php:150
+msgid "disabled"
+msgstr "désactivé"
+
+#: inc/index.subscribers.php:345
+#: inc/index.subscribers.php:560
+msgid "Email"
+msgstr "Email"
+
+#: inc/index.subscribers.php:346
+#: inc/index.subscribers.php:564
+#: inc/lib.newsletter.subscribers.list.php:99
+msgid "Subscribed"
+msgstr "Inscription"
+
+#: inc/index.subscribers.php:347
+#: inc/index.subscribers.php:397
+#: inc/index.subscribers.php:568
+#: inc/lib.newsletter.subscribers.list.php:100
+msgid "Last sent"
+msgstr "Dernier envoi"
+
+#: inc/index.subscribers.php:362
+#: inc/index.subscribers.php:377
+msgid "Email to send"
+msgstr "Email à envoyer"
+
+#: inc/index.subscribers.php:365
+#: inc/index.subscribers.php:380
+msgid "Confirmation"
+msgstr "Confirmation"
+
+#: inc/index.subscribers.php:366
+msgid "Suspension"
+msgstr "Suspension"
+
+#: inc/index.subscribers.php:367
+#: inc/index.subscribers.php:381
+msgid "Desactivation"
+msgstr "Désactivation"
+
+#: inc/index.subscribers.php:391
+msgid "Changing format"
+msgstr "Changement du format"
+
+#: inc/index.subscribers.php:396
+msgid "Raz last sent"
+msgstr "Raz dernier envoi"
+
+#: inc/index.subscribers.php:554
+msgid "Not allowed."
+msgstr "Non autorisé."
+
+#: inc/index.subscribers.php:558
+msgid "Edit a subscriber"
+msgstr "Modifier un abonné"
+
+#: inc/index.subscribers.php:572
+#: inc/lib.newsletter.subscribers.list.php:101
+msgid "Mode send"
+msgstr "Mode d'envoi"
+
+#: inc/index.subscribers.php:576
+msgid "Registration code"
+msgstr "Code d'inscription"
+
+#: inc/index.subscribers.php:600
+#: inc/index.subscribers.php:628
+msgid "Add a subscriber"
+msgstr "Ajouter un abonné"
+
+#: inc/index.subscribers.php:639
+msgid "Subscribers per page"
+msgstr "Abonnés par page"
+
+#: inc/index.subscribers.php:670
+msgid "Selected subscribers action:"
+msgstr "Action sur les abonnés sélectionnés:"
+
+#: inc/lib.newsletter.letters.list.php:46
+msgid "Statistics post type newsletter"
+msgstr "Statistiques des billets de type newsletter"
+
+#: inc/lib.newsletter.letters.list.php:51
+#: inc/lib.newsletter.subscribers.list.php:42
+msgid "Count"
+msgstr "Total"
+
+#: inc/lib.newsletter.letters.list.php:87
+#: inc/lib.newsletter.subscribers.list.php:80
+msgid "No subscriber matches the filter"
+msgstr "Aucun abonné dans votre sélection"
+
+#: inc/lib.newsletter.letters.list.php:89
+msgid "No letters for this blog"
+msgstr "Aucune lettre dans ce blog"
+
+#: inc/lib.newsletter.letters.list.php:111
+#: inc/lib.newsletter.letters.list.php:123
+#: inc/lib.newsletter.linked.post.list.php:49
+#: inc/lib.newsletter.linked.post.list.php:62
+#: inc/lib.newsletter.subscribers.list.php:110
+#: inc/lib.newsletter.subscribers.list.php:123
+msgid "Page(s)"
+msgstr "Page(s)"
+
+#: inc/lib.newsletter.letters.list.php:150
+#: inc/lib.newsletter.linked.post.list.php:86
+msgid "protected"
+msgstr "protégé"
+
+#: inc/lib.newsletter.letters.list.php:316
+#: inc/lib.newsletter.subscribers.list.php:202
+#: inc/lib.newsletter.subscribers.list.php:236
+#: inc/lib.newsletter.subscribers.list.php:276
+msgid "Send letters"
+msgstr "Envoi des lettres"
+
+#: inc/lib.newsletter.letters.list.php:319
+msgid "Requests"
+msgstr "Requêtes"
+
+#: inc/lib.newsletter.letters.list.php:360
+msgid "Change author for letters"
+msgstr "Change l'auteur des lettres"
+
+#: inc/lib.newsletter.letters.list.php:365
+msgid "Author ID:"
+msgstr "Identifiant de la l'auteur"
+
+#: inc/lib.newsletter.linked.post.list.php:38
+#: inc/lib.newsletter.linked.post.list.php:107
+#: inc/lib.newsletter.linked.post.list.php:108
+#: inc/lib.newsletter.linked.post.list.php:108
+msgid "Remove"
+msgstr "Enlever"
+
+#: inc/lib.newsletter.subscribers.list.php:37
+msgid "Statistics subscribers"
+msgstr "Statistiques sur les abonnés"
+
+#: inc/lib.newsletter.subscribers.list.php:82
+msgid "No subscriber for this blog"
+msgstr "Aucun abonné dans ce blog"
+
+#: inc/lib.newsletter.subscribers.list.php:98
+msgid "Subscriber"
+msgstr "Abonné"
+
+#: inc/lib.newsletter.subscribers.list.php:204
+#: inc/lib.newsletter.subscribers.list.php:278
+msgid "No enabled subscriber in your selection"
+msgstr "Aucun abonné actif dans votre sélection"
+
+#: inc/lib.newsletter.subscribers.list.php:238
+msgid "Select letter to send"
+msgstr "Choisir la lettre à envoyer"
+
+#: inc/lib.newsletter.subscribers.list.php:241
+msgid "Letter:"
+msgstr "Lettre:"
+
+#: inc/lib.newsletter.subscribers.list.php:259
+msgid "Send auto letter"
+msgstr "Envoyer la lettre automatique"
+
+msgid "Show title"
+msgstr "Voir le titre"
+
+msgid "Entry has been successfully updated"
+msgstr "La lettre a été mise à jour"
+
+msgid "Entry has been successfully created"
+msgstr "La lettre a été créée"
+
+msgid "File has been successfully attached"
+msgstr "Le fichier a été joint"
+
+msgid "Attachment has been successfully removed"
+msgstr "Le fichier joint a été supprimé"
+
+msgid "Comment has been successfully created"
+msgstr "Le commentaire a été correctement créé"
+
+msgid "Don't forget to validate your XHTML conversion by saving your post"
+msgstr "N'oubliez pas de valider la conversion XHTML en enregistrant votre billet"
+
+msgid "Entry status:"
+msgstr "Contenu du billet:"
+
+msgid "Published on:"
+msgstr "Date et heure de publication:"
+
+msgid "Text formating:"
+msgstr "Formatage du texte:"
+
+msgid "Entry lang:"
+msgstr "Langue du billet:"
+
+msgid "Entry password:"
+msgstr "Mot de passe:"
+
+msgid "Basename:"
+msgstr "URL spécifique:"
+
+msgid "Rename this tag:"
+msgstr "Renommer ce mot-clé:"
+
+msgid "Letter position"
+msgstr "Position de la lettre"
+
+msgid "Unable to send email"
+msgstr "Impossible d'envoyer le mail"
+
+msgid "%d subscriber"
+msgid_plural "%d subscribers"
+msgstr[0] "%d abonné"
+msgstr[1] "%d abonnés"
+
+msgid "%d newsletter"
+msgid_plural "%d newsletters"
+msgstr[0] "%d lettre"
+msgstr[1] "%d lettres"
+
+msgid "Manage your newsletters in Dotclear 2"
+msgstr "Gérer vos newsletters dans Dotclear 2"
+

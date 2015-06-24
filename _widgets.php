@@ -25,7 +25,7 @@ class newsletterWidgets
 		global $core, $plugin_name;
       	try {
       		# widget newsletter
-			$w->create('newsletter', 'Newsletter', array('publicWidgetsNewsletter', 'initWidgets'),
+			$w->create('newsletter', __('Newsletter: subscription form'), array('publicWidgetsNewsletter', 'initWidgets'),
 			null,
 			__('Link or subscription form'));
 			$w->newsletter->setting('title', __('Title').' : ', __('Newsletter'));

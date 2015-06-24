@@ -285,7 +285,7 @@ class tplNewsletter
 			'<p class="newsletter-form">'.
 			html::decodeEntities($content).
 			'</p>'.
-			'<input type="submit" name="nl_back" id="nl_back" value="'.__('Back').'" class="submit" />'.			
+			'<p><input type="submit" name="nl_back" id="nl_back" value="'.__('Back').'" class="submit" /></p>'.
 			'</form>';
 			
 		return (!empty($GLOBALS['newsletter']['msg']) ? $text : '');
@@ -329,7 +329,7 @@ class tplNewsletter
 				$res = __('Resume');
 				break;
 			case 'nl_email':
-				$res = __('Email');
+				$res = __('Email address');
 				break;
 			case 'nl_option':
 				$res = __('Action');
@@ -664,7 +664,12 @@ class urlNewsletter extends dcUrlHandlers
 			$GLOBALS['newsletter']['modesend'] = $modesend;
 	
 			# Affichage du formulaire
-			$core->tpl->setPath($core->tpl->getPath(), dirname(__FILE__).'/default-templates');
+			$tplset = $core->themes->moduleInfo($core->blog->settings->system->theme,'tplset');
+        if (!empty($tplset) && is_dir(dirname(__FILE__).'/default-templates/'.$tplset)) {
+            $core->tpl->setPath($core->tpl->getPath(), dirname(__FILE__).'/default-templates/'.$tplset);
+        } else {
+            $core->tpl->setPath($core->tpl->getPath(), dirname(__FILE__).'/default-templates/'.DC_DEFAULT_TPLSET);
+        }
 			$file = $core->tpl->getFilePath('subscribe.newsletter.html');
 			files::touch($file);
 			self::serveDocument('subscribe.newsletter.html','text/html',false,false);
@@ -762,7 +767,12 @@ class urlNewsletter extends dcUrlHandlers
 				}
 				
 				# The entry
-				$core->tpl->setPath($core->tpl->getPath(), dirname(__FILE__).'/default-templates');
+			$tplset = $core->themes->moduleInfo($core->blog->settings->system->theme,'tplset');
+        if (!empty($tplset) && is_dir(dirname(__FILE__).'/default-templates/'.$tplset)) {
+            $core->tpl->setPath($core->tpl->getPath(), dirname(__FILE__).'/default-templates/'.$tplset);
+        } else {
+            $core->tpl->setPath($core->tpl->getPath(), dirname(__FILE__).'/default-templates/'.DC_DEFAULT_TPLSET);
+        }
 				self::serveDocument('letter.html');
 			}
 		}
@@ -778,7 +788,12 @@ class urlNewsletter extends dcUrlHandlers
 			$GLOBALS['_page_number'] = $n;
 			$GLOBALS['core']->url->type = $n > 1 ? 'newsletters-page' : 'newsletters';
 		}
-    	$core->tpl->setPath($core->tpl->getPath(), dirname(__FILE__).'/default-templates');
+			$tplset = $core->themes->moduleInfo($core->blog->settings->system->theme,'tplset');
+        if (!empty($tplset) && is_dir(dirname(__FILE__).'/default-templates/'.$tplset)) {
+            $core->tpl->setPath($core->tpl->getPath(), dirname(__FILE__).'/default-templates/'.$tplset);
+        } else {
+            $core->tpl->setPath($core->tpl->getPath(), dirname(__FILE__).'/default-templates/'.DC_DEFAULT_TPLSET);
+        }
     	self::serveDocument('newsletters.html');    	
     }
     
@@ -838,7 +853,7 @@ class publicWidgetsNewsletter
 				# saisie de l'adresse email
 				$res .= 
 				'<p>'.
-				'<label for="nl_email">'.__('Email').'</label>'.
+				'<label for="nl_email">'.__('Email address: ').'</label>'.
 				'<input id="nl_email" type="email" name="nl_email">'.
 				'</p>';
 				
@@ -889,7 +904,7 @@ class publicWidgetsNewsletter
 					'<p>'.
 						'<img id="nl_captcha_img" src="'.Captcha::newsletter_public_url().'/'.$as->getImgFileName().'" alt="'.__('Captcha').'" />'.
 						'<img id="nl_reload_captcha" src="?pf=newsletter/reload.png" alt="'.__('Reload captcha').'" title="'.__('Reload captcha').'" style="cursor:pointer;position:relative;top:-7px;" />'.
-						'<input id="nl_captcha" name="nl_captcha" type="text" placeholder="Saisissez le texte " autocomplete="off">'.
+						'<input id="nl_captcha" name="nl_captcha" type="text" placeholder="'.__('Enter the text').'" autocomplete="off">'.
 					'</p>';
 
 					$res .=
@@ -911,7 +926,7 @@ class publicWidgetsNewsletter
 				$res .= '<ul><li><a href="'.$link.'">'.$subscription_link.'</a></li></ul>';
 			}
 			# affichage dynamique
-			$res .= '<div id="newsletter-pub-message"></div>';
+			$res .= '<p id="newsletter-pub-message"></p>';
 				
 			return $w->renderDiv($w->content_only,'newsletter-widget '.$w->class,'',$res);
 

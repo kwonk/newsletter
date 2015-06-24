@@ -1,0 +1,64 @@
+{{tpl:extends parent="__layout.html"}}
+
+<tpl:Block name="head-title">
+  <title>{{tpl:lang Newsletters}} - {{tpl:BlogName encode_html="1"}}<tpl:PaginationIf start="0"> - {{tpl:lang page}} {{tpl:PaginationCurrent}}</tpl:PaginationIf></title>
+</tpl:Block>
+
+<tpl:Block name="meta-robots">
+	<meta name="ROBOTS" content="{{tpl:BlogMetaRobots}}" />
+</tpl:Block>
+
+<tpl:Block name="meta-entry">
+	<meta name="description" lang="{{tpl:BlogLanguage}}" content="{{tpl:lang Newsletters}}" />
+	<meta name="author" content="{{tpl:BlogEditor encode_html="1"}}" />
+	<meta name="date" content="{{tpl:BlogUpdateDate iso8601="1"}}" />
+</tpl:Block>
+
+<tpl:Block name="dc-entry">
+	<meta property="dc.title" lang="{{tpl:BlogLanguage}}" content="{{tpl:lang Newsletters}} - {{tpl:BlogName encode_html="1"}}<tpl:PaginationIf start="0"> - {{tpl:lang page}} {{tpl:PaginationCurrent}}</tpl:PaginationIf>" />
+	<meta property="dc.description" lang="{{tpl:BlogLanguage}}" content="{{tpl:BlogDescription remove_html="1"}}" />
+	<meta property="dc.language" content="{{tpl:BlogLanguage}}" />
+	<meta property="dc.date" content="{{tpl:BlogUpdateDate iso8601="1"}}" />
+</tpl:Block>
+
+<tpl:Block name="head-linkrel">
+	<link rel="contents" href="{{tpl:BlogArchiveURL}}" title="{{tpl:lang Archives}}" />
+</tpl:Block>
+
+<tpl:Block name="body-tag"><body class="dc-newsletter"></tpl:Block>
+
+<tpl:Block name="main-content">
+	<div id="content-info">
+    <h2>{{tpl:lang Newsletters}}</h2>
+  </div>
+
+	<div class="content-inner">
+  <tpl:NewsletterEntries no_content="1">
+    <tpl:EntriesHeader>
+    </tpl:EntriesHeader>
+
+    <div id="p{{tpl:EntryID}}" class="post {{tpl:EntryIfOdd}} {{tpl:EntryIfFirst}}" lang="{{tpl:EntryLang}}" role="article">
+
+	  <h2 class="post-title"><a href="{{tpl:EntryURL}}">{{tpl:EntryTitle encode_html="1"}}</a></h2>
+
+  	<div class="post-meta">
+  		<p class="post-info">
+  			<span class="post-author">{{tpl:lang By}} {{tpl:EntryAuthorLink}},</span>
+  			<span class="post-date">{{tpl:EntryDate}}.</span>
+  		</p>
+  	</div>
+    </div>
+
+    <tpl:EntriesFooter>
+      <tpl:Pagination>
+        <p class="pagination"><tpl:PaginationIf end="0"><a href="{{tpl:PaginationURL offset="+1"}}" class="prev">&#171;
+        {{tpl:lang previous newsletters}}</a> - </tpl:PaginationIf>
+        {{tpl:lang page}} {{tpl:PaginationCurrent}} {{tpl:lang of}} {{tpl:PaginationCounter}}
+        <tpl:PaginationIf start="0"> - <a href="{{tpl:PaginationURL offset="-1"}}" class="next">{{tpl:lang next newsletters}}
+        &#187;</a></tpl:PaginationIf></p>
+      </tpl:Pagination>
+    </tpl:EntriesFooter>
+
+  </tpl:NewsletterEntries>
+	</div> <!-- End #content-inner -->
+</tpl:Block>

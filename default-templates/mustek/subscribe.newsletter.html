@@ -1,24 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{tpl:BlogLanguage}}" lang="{{tpl:BlogLanguage}}">
+<!DOCTYPE html>
+<html lang="{{tpl:BlogLanguage}}">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="MSSmartTagsPreventParsing" content="TRUE" />
+  <meta charset="UTF-8" />
   <meta name="ROBOTS" content="{{tpl:BlogMetaRobots robots="NOINDEX,NOARCHIVE"}}" />
   
   <title>{{tpl:NewsletterPageTitle encode_html="1"}} - {{tpl:BlogName encode_html="1"}}</title>
   <meta name="copyright" content="{{tpl:BlogCopyrightNotice encode_html="1"}}" />
   <meta name="author" content="{{tpl:BlogEditor encode_html="1"}}" />
   
-  <link rel="schema.dc" href="http://purl.org/dc/elements/1.1/" />
-  <meta name="dc.title" lang="{{tpl:BlogLanguage}}" content="{{tpl:NewsletterPageTitle}} - {{tpl:BlogName encode_html="1"}}" />
-  <meta name="dc.language" content="{{tpl:BlogLanguage}}" />
-  <meta name="dc.publisher" content="{{tpl:BlogEditor encode_html="1"}}" />
-  <meta name="dc.rights" content="{{tpl:BlogCopyrightNotice encode_html="1"}}" />
-  <meta name="dc.type" content="text" />
-  <meta name="dc.format" content="text/html" />
+  <meta property="dc.title" lang="{{tpl:BlogLanguage}}" content="{{tpl:NewsletterPageTitle}} - {{tpl:BlogName encode_html="1"}}" />
+  <meta property="dc.language" content="{{tpl:BlogLanguage}}" />
+  <meta property="dc.publisher" content="{{tpl:BlogEditor encode_html="1"}}" />
+  <meta property="dc.rights" content="{{tpl:BlogCopyrightNotice encode_html="1"}}" />
+  <meta property="dc.type" content="text" />
+  <meta property="dc.format" content="text/html" />
   
-  <link rel="top" href="{{tpl:BlogURL}}" title="{{tpl:lang Home}}" />
   <link rel="contents" title="{{tpl:lang Archives}}" href="{{tpl:BlogArchiveURL}}" />
   
   {{tpl:include src="_head.html"}}
@@ -30,33 +26,29 @@
 
 <div id="wrapper">
 
-<div id="main">
+<div id="main" role="main">
   <div id="content">
-
 	<div id="content-info">
   		<h2>{{tpl:NewsletterPageTitle encode_html="1"}}</h2>
 	</div>
 	
 	<div class="content-inner">
-
 	<tpl:NewsletterBlock>
 		<tpl:NewsletterMessageBlock>
-			<div id="newsletter_message">
+			<p id="newsletter_message">
 				{{tpl:Newsletter}}
-			</div>
+			</p>
 		</tpl:NewsletterMessageBlock>
 
 		<tpl:NewsletterFormBlock>
 			<div class="newsletter_form">
-				
-				<form action="{{tpl:NewsletterFormSubmit}}" method="post" id="nl_form">
+					{{tpl:NewsletterMsgPresentationForm}}
+				<form action="{{tpl:NewsletterFormSubmit}}" method="post" id="comment-form" role="form">
 					<fieldset>
 					
-					{{tpl:NewsletterMsgPresentationForm}}
-					
-					<p>
-						<label for="nl_email">{{tpl:NewsletterFormLabel id="nl_email"}}</label>
-						<input name="nl_email" id="nl_email" type="email" />
+					<p class="field">
+						<label for="nl_email">{{tpl:lang Email address: }}</label>
+						<input name="nl_email" id="nl_email" type="email" size="30" maxlength="255" />
 					</p>
 
 					<tpl:NewsletterIfUseDefaultFormat>
@@ -83,20 +75,16 @@
 					</p>
 					</fieldset>
 				</form>
-				<div class="post-info" id="newsletter-pub-message"></div>
+				<p class="post-info" id="newsletter-pub-message"></p>
 			</div>
 		</tpl:NewsletterFormBlock>
-		
 	</tpl:NewsletterBlock>
-	
 	</div>
-	
 
   </div>
 </div>
 
-
-<div id="sidebar">
+<div id="sidebar" role="complementary">
   <div id="blognav">
     {{tpl:Widgets type="nav"}}
   </div> <!-- End #blognav -->

@@ -1,0 +1,76 @@
+{{tpl:extends parent="__layout.html"}}
+
+<tpl:Block name="head-title">
+  <title>{{tpl:NewsletterPageTitle encode_html="1"}} - {{tpl:BlogName encode_html="1"}}</title>
+</tpl:Block>
+
+<tpl:Block name="meta-robots">
+  <meta name="ROBOTS" content="{{tpl:BlogMetaRobots robots="NOINDEX,NOARCHIVE"}}" />
+</tpl:Block>
+
+<tpl:Block name="dc-entry">
+  <meta name="dc.title" lang="{{tpl:BlogLanguage}}" content="{{tpl:NewsletterPageTitle}} - {{tpl:BlogName encode_html="1"}}" />
+  <meta property="dc.language" content="{{tpl:BlogLanguage}}" />
+</tpl:Block>
+
+<tpl:Block name="head-linkrel">
+  <link rel="contents" title="{{tpl:lang Archives}}" href="{{tpl:BlogArchiveURL}}" />
+  <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{tpl:BlogFeedURL type="atom"}}" />
+</tpl:Block>
+
+<tpl:Block name="body-tag"><body class="dc-newsletter"></tpl:Block>
+
+<tpl:Block name="main-content">
+  <div id="content-info">
+    <h2>{{tpl:NewsletterPageTitle encode_html="1"}}</h2>
+  </div>
+
+  <div class="content-inner">
+	<tpl:NewsletterBlock>
+		<tpl:NewsletterMessageBlock>
+			<p id="newsletter_message">
+				{{tpl:Newsletter}}
+			</p>
+		</tpl:NewsletterMessageBlock>
+
+		<tpl:NewsletterFormBlock>
+			<div class="newsletter_form">
+					{{tpl:NewsletterMsgPresentationForm}}
+				<form action="{{tpl:NewsletterFormSubmit}}" method="post" id="comment-form" role="form">
+					<fieldset>
+
+					<p class="field">
+						<label for="nl_email">{{tpl:lang Email address: }}</label>
+						<input name="nl_email" id="nl_email" type="email" size="30" maxlength="255" />
+					</p>
+
+					<tpl:NewsletterIfUseDefaultFormat>
+					<p>
+						{{tpl:NewsletterFormFormatSelect}}
+					</p>
+					</tpl:NewsletterIfUseDefaultFormat>
+
+					<tpl:NewsletterIfUseDefaultAction>
+					<p>
+						{{tpl:NewsletterFormActionSelect}}
+					</p>
+					</tpl:NewsletterIfUseDefaultAction>
+
+					<tpl:NewsletterIfUseCaptcha>
+					<p>
+						{{tpl:NewsletterFormCaptchaImg}} {{tpl:NewsletterFormCaptchaInput}}
+					</p>
+					</tpl:NewsletterIfUseCaptcha>
+
+					<p>
+						<input type="submit" name="nl_submit" id="nl_submit" value="{{tpl:NewsletterFormLabel id="ok"}}" class="submit" />
+						<input type="hidden" name="nl_random" id="nl_random" value="{{tpl:NewsletterFormRandom}}" />
+					</p>
+					</fieldset>
+				</form>
+				<p class="post-info" id="newsletter-pub-message"></p>
+			</div>
+		</tpl:NewsletterFormBlock>
+	</tpl:NewsletterBlock>
+  </div> <!-- End #content-inner -->
+</tpl:Block>

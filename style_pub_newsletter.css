@@ -5,68 +5,42 @@
 }
 
 .newsletter-widget select {
-	background: white;
-	border : 1px inset silver; 
-	width : 140px;
-	margin-left : 5px;
-	display : block;
 }
 
 .newsletter-widget p {
-    border-bottom: 1px silver;
-    padding: 1px 0 1px 1px;
-    display : block;
-    margin: 0 0 5px;
 }
 
 .newsletter-widget img {
-	margin-right : 5px;
-	padding : 1px 1px;	
+  max-width:100%;
 }
 
 #newsletter-widget-presentation {
-	border-bottom: 1px dashed silver;
 }
 
 .newsletter-widget #nl_email {
-	width : 90%;
-	display : block;
 }
+.listnsltr .allnsltr a {font-weight:bold;}
 
 /* ------------------------------------------------
 	Style formulaire page publique newsletter
 ------------------------------------------------ */
 
-.newsletter_form {
+.dc-newsletter #comment-form {
 }
 
-.newsletter_form select {
-	background: white;
-	border : 1px inset silver; 
-	width : 140px;
-	margin-left : 5px;
-	display : block;
+.dc-newsletter #comment-form select {
 }
 
-.newsletter_form p {
-    border-bottom: 1px silver;
-    padding: 1px 0 1px 1px;
-    display : block;
-    margin: 0 0 5px;
+.dc-newsletter #comment-form p {
 }
 
-.newsletter_form img {
-	margin-right : 5px;
-	padding : 1px 1px;	
+.dc-newsletter #comment-form img {
 }
 
 #newsletter_form-presentation {
-	border-bottom: 1px dashed silver;
 }
 
-.newsletter_form #nl_email {
-	width : 255px;
-	display : block;	
+.dc-newsletter #comment-form #nl_email {
 }
 
 /** ------------------------------------------------

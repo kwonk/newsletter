@@ -759,11 +759,11 @@ try {
 		'<h4>'.__('Advanced Settings').'</h4>'.
 			
 		'<p class="field">'.
-		'<label for="feditorname" class="classic required" title="'.__('Required field').'">'.__('Editor name').'</label>'.
+		'<label for="feditorname" class="classic required" title="'.__('Required field').'"><abbr title="'.__('Required field').'">*</abbr> '.__('Editor name').'</label>'.
 		form::field('feditorname',50,255,html::escapeHTML($feditorname)).
 		'</p>'.
 		'<p class="field">'.
-		'<label for="feditoremail" class="classic required" title="'.__('Required field').'">'.__('Editor email').'</label>'.
+		'<label for="feditoremail" class="classic required" title="'.__('Required field').'"><abbr title="'.__('Required field').'">*</abbr> '.__('Editor email').'</label>'.
 		form::field('feditoremail',50,255,html::escapeHTML($feditoremail)).
 		'</p>'.
 		'<p class="field">'.
@@ -1107,7 +1107,7 @@ try {
 		'<div class="fieldset" id="define_disable">'.
 			'<h4>'.__('Define message content Disable').'</h4>'.
 			'<p>'.
-				'<label for="f_txt_disabled_msg">'.__('Txt disabled msg').
+				'<label for="f_txt_disabled_msg">'.__('Txt disabled msg').'</label>'.
 				form::field('f_txt_disabled_msg',50,255,html::escapeHTML($f_txt_disabled_msg)).
 			'</p>'.
 			'<p>'.
